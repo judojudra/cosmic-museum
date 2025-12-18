@@ -2,7 +2,7 @@
 
 An interactive browser-based space museum where you can explore the universe through six immersive wings. I built this as a way to combine my interest in space exploration with web development, and honestly, it turned out way cooler than I initially imagined.
 
-[**Live Demo**](https://yourname.github.io/cosmic-museum) _(coming soon)_
+[**Live Demo**](www.thecosmicmuseum.com)
 
 ![Cosmic Museum Preview](preview-screenshot.png)
 
