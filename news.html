@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News & Discoveries | The Cosmic Museum</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
+</head>
+<body>
+  <div class="cosmos">
+    <canvas id="starfield"></canvas>
+    <div class="nebula-layer-1"></div>
+    <div class="nebula-layer-2"></div>
+    <div class="aurora"></div>
+    <div class="particles"></div>
+  </div>
+  
+  <div class="nav-container">
+    <nav class="nav">
+      <a href="./index.html" class="nav-logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">Cosmic Museum</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html" class="nav-link">Home</a></li>
+        <li><a href="./history.html" class="nav-link">History</a></li>
+        <li><a href="./exoplanets.html" class="nav-link">Exoplanets</a></li>
+        <li><a href="./missions.html" class="nav-link">Missions</a></li>
+        <li><a href="./deepspace.html" class="nav-link">Deep Space</a></li>
+        <li><a href="./news.html" class="nav-link active">News</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+  
+  <header class="page-header">
+    <div class="page-header__label">Latest Updates</div>
+    <h1 class="page-header__title text-display">News & Discoveries</h1>
+    <p class="page-header__desc">Stay updated with the latest breakthroughs from the cosmic frontier.</p>
+  </header>
+  
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="glass-card reveal" style="padding: 0; overflow: hidden;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; min-height: 400px;">
+          <div style="background: linear-gradient(135deg, rgba(26, 10, 46, 0.9), rgba(10, 22, 40, 0.95)); display: flex; flex-direction: column; justify-content: center; padding: var(--space-lg);">
+            <div class="news-tag" style="width: fit-content; margin-bottom: var(--space-sm);">Featured</div>
+            <h2 class="text-display heading-md" style="margin-bottom: var(--space-sm);">James Webb Reveals Earliest Galaxies</h2>
+            <p class="text-body" style="margin-bottom: var(--space-md);">The James Webb Space Telescope has captured images of galaxies that formed just 350 million years after the Big Bang.</p>
+            <span class="text-mono" style="font-size: 0.8rem; color: var(--dim-white);">December 2024 • NASA / ESA</span>
+          </div>
+          <div style="position: relative; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=800&q=80" alt="Deep space galaxies" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
+            <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10, 10, 20, 0.3), transparent);"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><span></span>Recent News</div>
+        <h2 class="text-display heading-md">Latest <span class="text-gradient">Discoveries</span></h2>
+      </div>
+      
+      <div class="news-grid stagger-children">
+        <article class="glass-card news-card glass-card--cyan">
+          <div class="news-image">
+            <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=600&q=80" alt="Exoplanet illustration">
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-tag">Exoplanets</span>
+              <span class="news-date">Dec 2024</span>
+            </div>
+            <h3 class="news-title">Water Vapor Detected on Distant Super-Earth</h3>
+            <p class="news-excerpt">Astronomers have confirmed water vapor in the atmosphere of K2-18 b, 120 light-years away.</p>
+          </div>
+        </article>
+        
+        <article class="glass-card news-card glass-card--pink">
+          <div class="news-image">
+            <img src="https://images.unsplash.com/photo-1507499739999-097706ad8914?w=600&q=80" alt="Black hole visualization">
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-tag">Black Holes</span>
+              <span class="news-date">Nov 2024</span>
+            </div>
+            <h3 class="news-title">Smallest Black Hole Ever Discovered</h3>
+            <p class="news-excerpt">A black hole just 3 times the mass of our Sun has been found.</p>
+          </div>
+        </article>
+        
+        <article class="glass-card news-card glass-card--green">
+          <div class="news-image">
+            <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=600&q=80" alt="Mars surface">
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-tag">Mars</span>
+              <span class="news-date">Nov 2024</span>
+            </div>
+            <h3 class="news-title">Perseverance Finds Organic Molecules</h3>
+            <p class="news-excerpt">The Mars rover has detected organic compounds that could be signs of ancient life.</p>
+          </div>
+        </article>
+        
+        <article class="glass-card news-card glass-card--gold">
+          <div class="news-image">
+            <img src="https://images.unsplash.com/photo-1531306728370-e2ebd9d7bb99?w=600&q=80" alt="Aurora borealis">
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-tag">Solar</span>
+              <span class="news-date">Oct 2024</span>
+            </div>
+            <h3 class="news-title">Solar Maximum Brings Spectacular Auroras</h3>
+            <p class="news-excerpt">The Sun's 11-year cycle has peaked, bringing stunning aurora displays worldwide.</p>
+          </div>
+        </article>
+        
+        <article class="glass-card news-card glass-card--cyan">
+          <div class="news-image">
+            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=600&q=80" alt="Rocket launch">
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-tag">Missions</span>
+              <span class="news-date">Oct 2024</span>
+            </div>
+            <h3 class="news-title">Europa Clipper Launches Successfully</h3>
+            <p class="news-excerpt">NASA's mission to study Jupiter's icy moon Europa is underway.</p>
+          </div>
+        </article>
+        
+        <article class="glass-card news-card glass-card--pink">
+          <div class="news-image">
+            <img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=600&q=80" alt="Betelgeuse star">
+          </div>
+          <div class="news-content">
+            <div class="news-meta">
+              <span class="news-tag">Stars</span>
+              <span class="news-date">Sep 2024</span>
+            </div>
+            <h3 class="news-title">Betelgeuse's Dimming Mystery Solved</h3>
+            <p class="news-excerpt">The red supergiant's dimming was caused by a massive dust cloud, not a supernova.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><span></span>Mark Your Calendar</div>
+        <h2 class="text-display heading-md">Upcoming <span class="text-gradient">Events</span></h2>
+      </div>
+      
+      <div class="mission-grid stagger-children">
+        <div class="glass-card mission-card glass-card--cyan">
+          <div class="mission-icon">🌑</div>
+          <div class="mission-content">
+            <div class="mission-year">March 2025</div>
+            <h3 class="mission-name">Total Lunar Eclipse</h3>
+            <p class="mission-desc">Visible across the Americas, turning the Moon deep red.</p>
+          </div>
+        </div>
+        
+        <div class="glass-card mission-card glass-card--green">
+          <div class="mission-icon">☄️</div>
+          <div class="mission-content">
+            <div class="mission-year">April 2025</div>
+            <h3 class="mission-name">Lyrid Meteor Shower</h3>
+            <p class="mission-desc">Up to 20 meteors per hour visible under dark skies.</p>
+          </div>
+        </div>
+        
+        <div class="glass-card mission-card glass-card--pink">
+          <div class="mission-icon">🔭</div>
+          <div class="mission-content">
+            <div class="mission-year">2025</div>
+            <h3 class="mission-name">Artemis III Moon Landing</h3>
+            <p class="mission-desc">NASA plans to return humans to the Moon including the first woman.</p>
+          </div>
+        </div>
+        
+        <div class="glass-card mission-card glass-card--gold">
+          <div class="mission-icon">🪐</div>
+          <div class="mission-content">
+            <div class="mission-year">2030</div>
+            <h3 class="mission-name">Europa Clipper Arrives</h3>
+            <p class="mission-desc">Detailed flybys of Jupiter's moon to study its subsurface ocean.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section">
+    <div class="container">
+      <div class="glass-card reveal" style="padding: var(--space-xl); text-align: center; background: linear-gradient(135deg, rgba(0, 245, 255, 0.05), rgba(255, 0, 255, 0.05));">
+        <h2 class="text-display heading-md" style="margin-bottom: var(--space-sm);">Explore More</h2>
+        <p class="text-body" style="max-width: 500px; margin: 0 auto var(--space-md);">Return to the beginning and continue your cosmic journey.</p>
+        <div style="display: flex; justify-content: center; gap: var(--space-sm); flex-wrap: wrap;">
+          <a href="./index.html" class="btn btn-primary">Return to Lobby <span>→</span></a>
+          <a href="./history.html" class="btn btn-secondary">Start Again</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo-icon" style="width: 24px; height: 24px; font-size: 0.7rem;">✧</div>
+          <span class="footer-text">The Cosmic Museum © 2024</span>
+        </div>
+        <div class="footer-links">
+          <a href="./index.html" class="footer-link">Home</a>
+          <a href="./history.html" class="footer-link">History</a>
+          <a href="./exoplanets.html" class="footer-link">Exoplanets</a>
+          <a href="./missions.html" class="footer-link">Missions</a>
+          <a href="./deepspace.html" class="footer-link">Deep Space</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./js/starfield.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Cosmic Museum - An immersive journey through the universe.">
+  <title>The Cosmic Museum | Journey Through the Universe</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
+</head>
+<body>
+  
+  <!-- Deep Space Background -->
+  <div class="cosmos">
+    <canvas id="starfield"></canvas>
+    <div class="nebula-layer-1"></div>
+    <div class="nebula-layer-2"></div>
+    <div class="aurora"></div>
+    <div class="particles"></div>
+  </div>
+  
+  <!-- Navigation -->
+  <div class="nav-container">
+    <nav class="nav">
+      <a href="./index.html" class="nav-logo">
+        <div class="logo-icon">✧</div>
+        <span class="logo-text">Cosmic Museum</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="./index.html" class="nav-link active">Home</a></li>
+        <li><a href="./history.html" class="nav-link">History</a></li>
+        <li><a href="./exoplanets.html" class="nav-link">Exoplanets</a></li>
+        <li><a href="./missions.html" class="nav-link">Missions</a></li>
+        <li><a href="./deepspace.html" class="nav-link">Deep Space</a></li>
+        <li><a href="./news.html" class="nav-link">News</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-label">
+        <span>✦</span>
+        Welcome to the Observatory
+      </div>
+      <h1 class="hero-title text-display heading-xl">
+        <span class="line">The Cosmic</span>
+        <span class="line">Museum</span>
+      </h1>
+      <p class="hero-subtitle">
+        An immersive journey through 13.8 billion years of cosmic history. 
+        Explore distant worlds, witness humanity's greatest expeditions, 
+        and discover the mysteries that lie beyond.
+      </p>
+      <div class="hero-cta">
+        <a href="./history.html" class="btn btn-primary">Begin Your Journey <span>→</span></a>
+        <a href="#exhibitions" class="btn btn-secondary">View Exhibitions</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+  
+  <!-- Statistics -->
+  <section class="section">
+    <div class="container">
+      <div class="stats-grid stagger-children">
+        <div class="glass-card stat-card glass-card--cyan">
+          <div class="stat-value" data-count="5000" data-suffix="+">0</div>
+          <div class="stat-label">Confirmed Exoplanets</div>
+        </div>
+        <div class="glass-card stat-card glass-card--pink">
+          <div class="stat-value" data-count="13" data-suffix=".8B">0</div>
+          <div class="stat-label">Years of History</div>
+        </div>
+        <div class="glass-card stat-card glass-card--green">
+          <div class="stat-value" data-count="250" data-suffix="+">0</div>
+          <div class="stat-label">Space Missions</div>
+        </div>
+        <div class="glass-card stat-card glass-card--gold">
+          <div class="stat-value" data-count="2" data-suffix="T+">0</div>
+          <div class="stat-label">Galaxies Observed</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Exhibitions Section -->
+  <section id="exhibitions" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><span></span>Our Exhibitions</div>
+        <h2 class="text-display heading-lg">Explore the <span class="text-gradient">Universe</span></h2>
+        <p class="text-body" style="max-width: 600px; margin: var(--space-sm) auto 0;">
+          Each wing of our museum offers a unique perspective on the cosmos.
+        </p>
+      </div>
+      
+      <div class="exhibition-grid stagger-children">
+        <a href="./history.html" class="glass-card exhibition-card glass-card--cyan">
+          <div class="exhibition-card__bg" style="background: linear-gradient(135deg, rgba(26, 10, 46, 0.8), rgba(10, 22, 40, 0.9));"></div>
+          <div class="exhibition-card__content">
+            <div class="exhibition-card__number">01</div>
+            <h3 class="exhibition-card__title">History of Astronomy</h3>
+            <p class="exhibition-card__desc">From ancient Babylonian star charts to the Hubble Space Telescope.</p>
+            <span class="exhibition-card__link">Enter Wing <span>→</span></span>
+          </div>
+        </a>
+        
+        <a href="./exoplanets.html" class="glass-card exhibition-card glass-card--pink">
+          <div class="exhibition-card__bg" style="background: linear-gradient(135deg, rgba(77, 30, 80, 0.6), rgba(10, 22, 40, 0.9));"></div>
+          <div class="exhibition-card__content">
+            <div class="exhibition-card__number">02</div>
+            <h3 class="exhibition-card__title">Exoplanets & Stars</h3>
+            <p class="exhibition-card__desc">Discover alien worlds beyond our solar system.</p>
+            <span class="exhibition-card__link">Enter Wing <span>→</span></span>
+          </div>
+        </a>
+        
+        <a href="./missions.html" class="glass-card exhibition-card glass-card--green">
+          <div class="exhibition-card__bg" style="background: linear-gradient(135deg, rgba(10, 46, 40, 0.7), rgba(10, 22, 40, 0.9));"></div>
+          <div class="exhibition-card__content">
+            <div class="exhibition-card__number">03</div>
+            <h3 class="exhibition-card__title">Space Missions</h3>
+            <p class="exhibition-card__desc">Humanity's greatest expeditions into the cosmos.</p>
+            <span class="exhibition-card__link">Enter Wing <span>→</span></span>
+          </div>
+        </a>
+        
+        <a href="./deepspace.html" class="glass-card exhibition-card glass-card--gold">
+          <div class="exhibition-card__bg" style="background: linear-gradient(135deg, rgba(46, 30, 10, 0.6), rgba(10, 22, 40, 0.9));"></div>
+          <div class="exhibition-card__content">
+            <div class="exhibition-card__number">04</div>
+            <h3 class="exhibition-card__title">Deep Space & Cosmology</h3>
+            <p class="exhibition-card__desc">Black holes, dark matter, and cosmic mysteries.</p>
+            <span class="exhibition-card__link">Enter Wing <span>→</span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Quote Section -->
+  <section class="section">
+    <div class="container">
+      <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto;">
+        <div style="font-size: 4rem; margin-bottom: var(--space-sm); opacity: 0.3;">❝</div>
+        <blockquote class="text-serif" style="font-size: clamp(1.5rem, 4vw, 2.5rem); line-height: 1.5; color: var(--soft-white); margin-bottom: var(--space-md);">
+          The cosmos is within us. We are made of star-stuff. 
+          We are a way for the universe to know itself.
+        </blockquote>
+        <cite class="text-mono" style="font-size: 0.85rem; color: var(--dim-white); font-style: normal;">— Carl Sagan</cite>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="glass-card reveal" style="padding: var(--space-xl); text-align: center; background: linear-gradient(135deg, rgba(0, 245, 255, 0.05), rgba(255, 0, 255, 0.05));">
+        <h2 class="text-display heading-md" style="margin-bottom: var(--space-sm);">Ready to Explore?</h2>
+        <p class="text-body" style="max-width: 500px; margin: 0 auto var(--space-md);">
+          Begin your journey through the cosmos. Each exhibition offers new wonders.
+        </p>
+        <div style="display: flex; justify-content: center; gap: var(--space-sm); flex-wrap: wrap;">
+          <a href="./history.html" class="btn btn-primary">Start Exploring <span>→</span></a>
+          <a href="./news.html" class="btn btn-secondary">Latest News</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <div class="logo-icon" style="width: 24px; height: 24px; font-size: 0.7rem;">✧</div>
+          <span class="footer-text">The Cosmic Museum © 2024</span>
+        </div>
+        <div class="footer-links">
+          <a href="./history.html" class="footer-link">History</a>
+          <a href="./exoplanets.html" class="footer-link">Exoplanets</a>
+          <a href="./missions.html" class="footer-link">Missions</a>
+          <a href="./deepspace.html" class="footer-link">Deep Space</a>
+          <a href="./news.html" class="footer-link">News</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./js/starfield.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
