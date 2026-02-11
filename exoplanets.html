@@ -6,11 +6,10 @@
   <meta name="description" content="Exoplanets & Stars - Discover alien worlds beyond our solar system.">
   <title>Exoplanets & Stars | The Cosmic Museum</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='%2300d4ff' stroke-width='4'/><circle cx='50' cy='50' r='8' fill='%2300d4ff'/></svg>">
 </head>
 <body>
-  
-  <!-- Deep Space Background -->
+
   <div class="cosmos">
     <canvas id="starfield"></canvas>
     <div class="nebula-layer-1"></div>
@@ -18,12 +17,11 @@
     <div class="aurora"></div>
     <div class="particles"></div>
   </div>
-  
-  <!-- Navigation -->
+
   <div class="nav-container">
     <nav class="nav">
       <a href="./index.html" class="nav-logo">
-        <div class="logo-icon">✧</div>
+        <div class="logo-icon"></div>
         <span class="logo-text">Cosmic Museum</span>
       </a>
       <ul class="nav-links">
@@ -39,8 +37,7 @@
       </button>
     </nav>
   </div>
-  
-  <!-- Page Header -->
+
   <header class="page-header">
     <div class="page-header__label">Exhibition 02</div>
     <h1 class="page-header__title text-display">Exoplanets & Stars</h1>
@@ -48,8 +45,7 @@
       Journey beyond our solar system to discover alien worlds orbiting distant suns.
     </p>
   </header>
-  
-  <!-- Stats Banner -->
+
   <section class="section" style="padding-top: 0;">
     <div class="container">
       <div class="stats-grid stagger-children" style="grid-template-columns: repeat(3, 1fr);">
@@ -68,34 +64,31 @@
       </div>
     </div>
   </section>
-  
-  <!-- Introduction -->
+
   <section class="section">
     <div class="container">
       <div class="glass-card reveal" style="padding: var(--space-lg); max-width: 800px; margin: 0 auto; text-align: center;">
         <p class="text-lg" style="color: var(--soft-white); margin-bottom: var(--space-sm);">
-          Until 1992, every known planet orbited our Sun. Today, we've discovered 
-          thousands of worlds orbiting other stars—from scorching hot Jupiters 
+          Until 1992, every known planet orbited our Sun. Today, we've discovered
+          thousands of worlds orbiting other stars&#8212;from scorching hot Jupiters
           to potentially habitable rocky worlds.
         </p>
         <p class="text-body">
-          Each discovery brings us closer to answering the ultimate question: 
+          Each discovery brings us closer to answering the ultimate question:
           Are we alone in the universe?
         </p>
       </div>
     </div>
   </section>
-  
-  <!-- Notable Exoplanets -->
+
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label"><span></span>Alien Worlds</div>
+        <div class="section-label">Alien Worlds</div>
         <h2 class="text-display heading-md">Notable <span class="text-gradient">Exoplanets</span></h2>
       </div>
-      
+
       <div class="planet-grid stagger-children">
-        <!-- Kepler-452b -->
         <div class="glass-card planet-card glass-card--cyan">
           <div class="planet-visual" style="background: radial-gradient(circle at 30% 30%, #4a8fcc, #1a3d5c 60%, #0a1a2a);"></div>
           <h3 class="planet-name">Kepler-452b</h3>
@@ -106,7 +99,7 @@
               <div class="planet-stat__label">Distance</div>
             </div>
             <div class="planet-stat">
-              <div class="planet-stat__value">1.6×</div>
+              <div class="planet-stat__value">1.6x</div>
               <div class="planet-stat__label">Earth Size</div>
             </div>
             <div class="planet-stat">
@@ -115,11 +108,10 @@
             </div>
           </div>
           <p class="text-body" style="margin-top: var(--space-sm); text-align: center; font-size: 0.85rem;">
-            Called "Earth's Cousin" - orbits a Sun-like star in the habitable zone.
+            Called "Earth's Cousin" &#8212; orbits a Sun-like star in the habitable zone.
           </p>
         </div>
-        
-        <!-- TRAPPIST-1e -->
+
         <div class="glass-card planet-card glass-card--green">
           <div class="planet-visual" style="background: radial-gradient(circle at 30% 30%, #5c9a7a, #2a4a3c 60%, #0a1a14);"></div>
           <h3 class="planet-name">TRAPPIST-1e</h3>
@@ -130,7 +122,7 @@
               <div class="planet-stat__label">Distance</div>
             </div>
             <div class="planet-stat">
-              <div class="planet-stat__value">0.92×</div>
+              <div class="planet-stat__value">0.92x</div>
               <div class="planet-stat__label">Earth Size</div>
             </div>
             <div class="planet-stat">
@@ -142,8 +134,7 @@
             Most Earth-like exoplanet known. Part of a 7-planet system.
           </p>
         </div>
-        
-        <!-- Proxima Centauri b -->
+
         <div class="glass-card planet-card glass-card--pink">
           <div class="planet-visual" style="background: radial-gradient(circle at 30% 30%, #cc6a6a, #5c2a2a 60%, #2a0a0a);"></div>
           <h3 class="planet-name">Proxima Centauri b</h3>
@@ -154,7 +145,7 @@
               <div class="planet-stat__label">Distance</div>
             </div>
             <div class="planet-stat">
-              <div class="planet-stat__value">1.07×</div>
+              <div class="planet-stat__value">1.07x</div>
               <div class="planet-stat__label">Earth Size</div>
             </div>
             <div class="planet-stat">
@@ -166,8 +157,7 @@
             The closest known exoplanet to Earth. Our nearest stellar neighbor.
           </p>
         </div>
-        
-        <!-- HD 189733b -->
+
         <div class="glass-card planet-card glass-card--gold">
           <div class="planet-visual" style="background: radial-gradient(circle at 30% 30%, #4a6acc, #1a2a5c 60%, #0a0a2a);"></div>
           <h3 class="planet-name">HD 189733b</h3>
@@ -178,7 +168,7 @@
               <div class="planet-stat__label">Distance</div>
             </div>
             <div class="planet-stat">
-              <div class="planet-stat__value">1.14×</div>
+              <div class="planet-stat__value">1.14x</div>
               <div class="planet-stat__label">Jupiter Size</div>
             </div>
             <div class="planet-stat">
@@ -187,11 +177,10 @@
             </div>
           </div>
           <p class="text-body" style="margin-top: var(--space-sm); text-align: center; font-size: 0.85rem;">
-            Deep blue color, 1,000°C temps, and 5,400 mph glass rain storms.
+            Deep blue color, 1,000 C temps, and 5,400 mph glass rain storms.
           </p>
         </div>
-        
-        <!-- Kepler-16b -->
+
         <div class="glass-card planet-card glass-card--cyan">
           <div class="planet-visual" style="background: radial-gradient(circle at 30% 30%, #cc9a4a, #5c4a2a 60%, #2a1a0a);"></div>
           <h3 class="planet-name">Kepler-16b</h3>
@@ -202,7 +191,7 @@
               <div class="planet-stat__label">Distance</div>
             </div>
             <div class="planet-stat">
-              <div class="planet-stat__value">0.75×</div>
+              <div class="planet-stat__value">0.75x</div>
               <div class="planet-stat__label">Jupiter Size</div>
             </div>
             <div class="planet-stat">
@@ -211,11 +200,10 @@
             </div>
           </div>
           <p class="text-body" style="margin-top: var(--space-sm); text-align: center; font-size: 0.85rem;">
-            A real "Tatooine" - orbits two suns and sees double sunsets.
+            A real "Tatooine" &#8212; orbits two suns and sees double sunsets.
           </p>
         </div>
-        
-        <!-- TOI-700 d -->
+
         <div class="glass-card planet-card glass-card--green">
           <div class="planet-visual" style="background: radial-gradient(circle at 30% 30%, #6a9acc, #2a4a6c 60%, #0a1a2a);"></div>
           <h3 class="planet-name">TOI-700 d</h3>
@@ -226,7 +214,7 @@
               <div class="planet-stat__label">Distance</div>
             </div>
             <div class="planet-stat">
-              <div class="planet-stat__value">1.1×</div>
+              <div class="planet-stat__value">1.1x</div>
               <div class="planet-stat__label">Earth Size</div>
             </div>
             <div class="planet-stat">
@@ -241,59 +229,66 @@
       </div>
     </div>
   </section>
-  
-  <!-- Detection Methods -->
+
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label"><span></span>How We Find Them</div>
+        <div class="section-label">How We Find Them</div>
         <h2 class="text-display heading-md">Detection <span class="text-gradient">Methods</span></h2>
       </div>
-      
+
       <div class="mission-grid stagger-children">
         <div class="glass-card mission-card glass-card--cyan">
-          <div class="mission-icon">📉</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1534996858221-380b92700493?w=120&q=80" alt="Light dimming">
+          </div>
           <div class="mission-content">
             <h3 class="mission-name">Transit Method</h3>
             <p class="mission-agency">Most Successful Technique</p>
             <p class="mission-desc">
-              When a planet passes in front of its star, it blocks a tiny amount of light. 
+              When a planet passes in front of its star, it blocks a tiny amount of light.
               By measuring this dimming, we can determine the planet's size and orbit.
             </p>
           </div>
         </div>
-        
+
         <div class="glass-card mission-card glass-card--pink">
-          <div class="mission-icon">〰️</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=120&q=80" alt="Star wobble">
+          </div>
           <div class="mission-content">
             <h3 class="mission-name">Radial Velocity</h3>
             <p class="mission-agency">The Wobble Method</p>
             <p class="mission-desc">
-              A planet's gravity causes its star to wobble. We detect this by measuring 
+              A planet's gravity causes its star to wobble. We detect this by measuring
               Doppler shifts in the star's light, revealing the planet's mass.
             </p>
           </div>
         </div>
-        
+
         <div class="glass-card mission-card glass-card--green">
-          <div class="mission-icon">📸</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?w=120&q=80" alt="Direct imaging">
+          </div>
           <div class="mission-content">
             <h3 class="mission-name">Direct Imaging</h3>
             <p class="mission-agency">Seeing is Believing</p>
             <p class="mission-desc">
-              Using advanced telescopes and coronagraphs to block starlight, 
+              Using advanced telescopes and coronagraphs to block starlight,
               we can directly photograph young, hot giant planets.
             </p>
           </div>
         </div>
-        
+
         <div class="glass-card mission-card glass-card--gold">
-          <div class="mission-icon">🔍</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?w=120&q=80" alt="Gravitational lensing">
+          </div>
           <div class="mission-content">
             <h3 class="mission-name">Gravitational Microlensing</h3>
             <p class="mission-agency">Einstein's Method</p>
             <p class="mission-desc">
-              When a star with planets passes in front of a distant star, its gravity 
+              When a star with planets passes in front of a distant star, its gravity
               bends and magnifies the light, revealing planetary companions.
             </p>
           </div>
@@ -301,8 +296,7 @@
       </div>
     </div>
   </section>
-  
-  <!-- Next Exhibition -->
+
   <section class="section">
     <div class="container">
       <div class="glass-card reveal" style="padding: var(--space-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
@@ -311,18 +305,17 @@
           <h3 class="text-display heading-sm">Space Missions</h3>
           <p class="text-body">Humanity's greatest cosmic expeditions.</p>
         </div>
-        <a href="./missions.html" class="btn btn-primary">Continue Journey <span>→</span></a>
+        <a href="./missions.html" class="btn btn-primary">Continue Journey <span>&#8594;</span></a>
       </div>
     </div>
   </section>
-  
-  <!-- Footer -->
+
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <div class="logo-icon" style="width: 24px; height: 24px; font-size: 0.7rem;">✧</div>
-          <span class="footer-text">The Cosmic Museum © 2024</span>
+          <div class="logo-icon" style="width: 24px; height: 24px;"></div>
+          <span class="footer-text">The Cosmic Museum</span>
         </div>
         <div class="footer-links">
           <a href="./index.html" class="footer-link">Home</a>
@@ -334,7 +327,7 @@
       </div>
     </div>
   </footer>
-  
+
   <script src="./js/starfield.js"></script>
   <script src="./js/main.js"></script>
 </body>

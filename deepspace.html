@@ -6,11 +6,10 @@
   <meta name="description" content="Deep Space & Cosmology - Explore the universe's grandest mysteries.">
   <title>Deep Space & Cosmology | The Cosmic Museum</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='%2300d4ff' stroke-width='4'/><circle cx='50' cy='50' r='8' fill='%2300d4ff'/></svg>">
 </head>
 <body>
-  
-  <!-- Deep Space Background -->
+
   <div class="cosmos">
     <canvas id="starfield"></canvas>
     <div class="nebula-layer-1"></div>
@@ -18,12 +17,11 @@
     <div class="aurora"></div>
     <div class="particles"></div>
   </div>
-  
-  <!-- Navigation -->
+
   <div class="nav-container">
     <nav class="nav">
       <a href="./index.html" class="nav-logo">
-        <div class="logo-icon">✧</div>
+        <div class="logo-icon"></div>
         <span class="logo-text">Cosmic Museum</span>
       </a>
       <ul class="nav-links">
@@ -39,254 +37,280 @@
       </button>
     </nav>
   </div>
-  
-  <!-- Page Header -->
+
   <header class="page-header">
     <div class="page-header__label">Exhibition 04</div>
     <h1 class="page-header__title text-display">Deep Space</h1>
     <p class="page-header__desc">
-      Black holes, dark matter, and the fundamental nature of reality. 
+      Black holes, dark matter, and the fundamental nature of reality.
       Explore the universe's most profound mysteries.
     </p>
   </header>
-  
-  <!-- Scale of the Universe -->
+
   <section class="section" style="padding-top: 0;">
     <div class="container">
       <div class="glass-card reveal" style="padding: var(--space-lg); max-width: 800px; margin: 0 auto; text-align: center;">
         <p class="text-lg" style="color: var(--soft-white); margin-bottom: var(--space-sm);">
-          The observable universe contains over 2 trillion galaxies, each with 
-          hundreds of billions of stars. Yet all the matter we can see makes up 
+          The observable universe contains over 2 trillion galaxies, each with
+          hundreds of billions of stars. Yet all the matter we can see makes up
           only 5% of what exists.
         </p>
         <p class="text-body">
-          The rest? Dark matter and dark energy—mysterious forces that shape 
+          The rest? Dark matter and dark energy&#8212;mysterious forces that shape
           the cosmos but remain invisible to us.
         </p>
       </div>
     </div>
   </section>
-  
-  <!-- Cosmic Phenomena -->
+
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label"><span></span>Cosmic Wonders</div>
+        <div class="section-label">Cosmic Wonders</div>
         <h2 class="text-display heading-md">Strange <span class="text-gradient">Phenomena</span></h2>
       </div>
-      
+
       <div class="phenomena-grid stagger-children">
         <div class="glass-card phenomena-card glass-card--cyan">
-          <div class="phenomena-icon">🕳️</div>
-          <h3 class="phenomena-title">Black Holes</h3>
-          <p class="phenomena-desc">
-            Regions of spacetime where gravity is so extreme that nothing—not 
-            even light—can escape. The boundary is called the event horizon, 
-            a point of no return.
-          </p>
+          <div class="phenomena-card__image">
+            <img src="https://images.unsplash.com/photo-1507499739999-097706ad8914?w=600&q=80" alt="Black hole visualization" loading="lazy">
+          </div>
+          <div class="phenomena-card__body">
+            <h3 class="phenomena-title">Black Holes</h3>
+            <p class="phenomena-desc">
+              Regions of spacetime where gravity is so extreme that nothing&#8212;not
+              even light&#8212;can escape. The boundary is called the event horizon,
+              a point of no return.
+            </p>
+          </div>
         </div>
-        
+
         <div class="glass-card phenomena-card glass-card--pink">
-          <div class="phenomena-icon">💫</div>
-          <h3 class="phenomena-title">Neutron Stars</h3>
-          <p class="phenomena-desc">
-            The collapsed cores of massive stars, so dense that a teaspoon 
-            would weigh 6 billion tons. Some spin hundreds of times per second.
-          </p>
+          <div class="phenomena-card__image">
+            <img src="https://images.unsplash.com/photo-1534996858221-380b92700493?w=600&q=80" alt="Stellar explosion" loading="lazy">
+          </div>
+          <div class="phenomena-card__body">
+            <h3 class="phenomena-title">Neutron Stars</h3>
+            <p class="phenomena-desc">
+              The collapsed cores of massive stars, so dense that a teaspoon
+              would weigh 6 billion tons. Some spin hundreds of times per second.
+            </p>
+          </div>
         </div>
-        
+
         <div class="glass-card phenomena-card glass-card--green">
-          <div class="phenomena-icon">🌀</div>
-          <h3 class="phenomena-title">Quasars</h3>
-          <p class="phenomena-desc">
-            Supermassive black holes actively consuming matter, outshining 
-            entire galaxies. The brightest objects in the universe.
-          </p>
+          <div class="phenomena-card__image">
+            <img src="https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=600&q=80" alt="Galaxy core" loading="lazy">
+          </div>
+          <div class="phenomena-card__body">
+            <h3 class="phenomena-title">Quasars</h3>
+            <p class="phenomena-desc">
+              Supermassive black holes actively consuming matter, outshining
+              entire galaxies. The brightest objects in the universe.
+            </p>
+          </div>
         </div>
-        
+
         <div class="glass-card phenomena-card glass-card--gold">
-          <div class="phenomena-icon">⚡</div>
-          <h3 class="phenomena-title">Gamma-Ray Bursts</h3>
-          <p class="phenomena-desc">
-            The most energetic events since the Big Bang. In seconds, they 
-            release more energy than the Sun will in its entire lifetime.
-          </p>
+          <div class="phenomena-card__image">
+            <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?w=600&q=80" alt="Cosmic energy burst" loading="lazy">
+          </div>
+          <div class="phenomena-card__body">
+            <h3 class="phenomena-title">Gamma-Ray Bursts</h3>
+            <p class="phenomena-desc">
+              The most energetic events since the Big Bang. In seconds, they
+              release more energy than the Sun will in its entire lifetime.
+            </p>
+          </div>
         </div>
-        
+
         <div class="glass-card phenomena-card glass-card--cyan">
-          <div class="phenomena-icon">🔮</div>
-          <h3 class="phenomena-title">Dark Matter</h3>
-          <p class="phenomena-desc">
-            An invisible substance that doesn't emit light but exerts 
-            gravitational force. It holds galaxies together and makes up 27% 
-            of the universe.
-          </p>
+          <div class="phenomena-card__image">
+            <img src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?w=600&q=80" alt="Dark cosmos" loading="lazy">
+          </div>
+          <div class="phenomena-card__body">
+            <h3 class="phenomena-title">Dark Matter</h3>
+            <p class="phenomena-desc">
+              An invisible substance that doesn't emit light but exerts
+              gravitational force. It holds galaxies together and makes up 27%
+              of the universe.
+            </p>
+          </div>
         </div>
-        
+
         <div class="glass-card phenomena-card glass-card--pink">
-          <div class="phenomena-icon">⬛</div>
-          <h3 class="phenomena-title">Dark Energy</h3>
-          <p class="phenomena-desc">
-            A mysterious force causing the universe's expansion to accelerate. 
-            It comprises 68% of the universe and remains one of science's 
-            greatest puzzles.
-          </p>
+          <div class="phenomena-card__image">
+            <img src="https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=600&q=80" alt="Expanding universe" loading="lazy">
+          </div>
+          <div class="phenomena-card__body">
+            <h3 class="phenomena-title">Dark Energy</h3>
+            <p class="phenomena-desc">
+              A mysterious force causing the universe's expansion to accelerate.
+              It comprises 68% of the universe and remains one of science's
+              greatest puzzles.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- The Big Numbers -->
+
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label"><span></span>Cosmic Scale</div>
+        <div class="section-label">Cosmic Scale</div>
         <h2 class="text-display heading-md">Mind-Bending <span class="text-gradient">Numbers</span></h2>
       </div>
-      
+
       <div class="stats-grid stagger-children" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
         <div class="glass-card stat-card glass-card--cyan">
-          <div class="stat-value" style="font-size: 2rem;">93 billion</div>
+          <div class="stat-value" style="font-size: 1.8rem;">93 billion</div>
           <div class="stat-label">Light-years across (observable universe)</div>
         </div>
         <div class="glass-card stat-card glass-card--pink">
-          <div class="stat-value" style="font-size: 2rem;">2 trillion+</div>
+          <div class="stat-value" style="font-size: 1.8rem;">2 trillion+</div>
           <div class="stat-label">Galaxies in the observable universe</div>
         </div>
         <div class="glass-card stat-card glass-card--green">
-          <div class="stat-value" style="font-size: 2rem;">10²⁴</div>
+          <div class="stat-value" style="font-size: 1.8rem;">10&#178;&#8308;</div>
           <div class="stat-label">Stars in the observable universe</div>
         </div>
         <div class="glass-card stat-card glass-card--gold">
-          <div class="stat-value" style="font-size: 2rem;">13.8 billion</div>
+          <div class="stat-value" style="font-size: 1.8rem;">13.8 billion</div>
           <div class="stat-label">Years since the Big Bang</div>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- The Big Bang -->
+
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label"><span></span>In the Beginning</div>
+        <div class="section-label">In the Beginning</div>
         <h2 class="text-display heading-md">The <span class="text-gradient">Big Bang</span></h2>
       </div>
-      
+
       <div class="timeline reveal">
         <div class="timeline-item">
           <div class="timeline-year">0 seconds</div>
           <h3 class="timeline-title">The Singularity</h3>
           <p class="timeline-desc">
-            All matter, energy, space, and time emerge from an infinitely dense point. 
+            All matter, energy, space, and time emerge from an infinitely dense point.
             Physics as we know it breaks down.
           </p>
         </div>
-        
+
         <div class="timeline-item">
-          <div class="timeline-year">10⁻⁴³ seconds</div>
+          <div class="timeline-year">10&#8315;&#8308;&#179; seconds</div>
           <h3 class="timeline-title">Planck Epoch Ends</h3>
           <p class="timeline-desc">
             The universe is smaller than a proton. Gravity separates from other forces.
           </p>
         </div>
-        
+
         <div class="timeline-item">
-          <div class="timeline-year">10⁻³² seconds</div>
+          <div class="timeline-year">10&#8315;&#179;&#178; seconds</div>
           <h3 class="timeline-title">Cosmic Inflation</h3>
           <p class="timeline-desc">
-            The universe expands exponentially, growing from smaller than an atom to 
+            The universe expands exponentially, growing from smaller than an atom to
             larger than a galaxy in a fraction of a second.
           </p>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-year">3 minutes</div>
           <h3 class="timeline-title">Nucleosynthesis</h3>
           <p class="timeline-desc">
-            Protons and neutrons combine to form the first atomic nuclei: 
+            Protons and neutrons combine to form the first atomic nuclei:
             hydrogen, helium, and traces of lithium.
           </p>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-year">380,000 years</div>
           <h3 class="timeline-title">Recombination</h3>
           <p class="timeline-desc">
-            The universe cools enough for electrons to bind to nuclei. 
-            Light can finally travel freely—we see this as the Cosmic Microwave Background.
+            The universe cools enough for electrons to bind to nuclei.
+            Light can finally travel freely&#8212;we see this as the Cosmic Microwave Background.
           </p>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-year">400 million years</div>
           <h3 class="timeline-title">First Stars</h3>
           <p class="timeline-desc">
-            Gravity pulls hydrogen clouds together to ignite the first stars, 
+            Gravity pulls hydrogen clouds together to ignite the first stars,
             ending the cosmic dark ages.
           </p>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-year">13.8 billion years</div>
           <h3 class="timeline-title">Today</h3>
           <p class="timeline-desc">
-            The universe continues to expand and cool. On a small blue planet, 
+            The universe continues to expand and cool. On a small blue planet,
             curious beings wonder how it all began.
           </p>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- Unsolved Mysteries -->
+
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label"><span></span>The Unknown</div>
+        <div class="section-label">The Unknown</div>
         <h2 class="text-display heading-md">Unsolved <span class="text-gradient">Mysteries</span></h2>
       </div>
-      
+
       <div class="mission-grid stagger-children">
-        <div class="glass-card mission-card">
-          <div class="mission-icon">❓</div>
+        <div class="glass-card mission-card glass-card--cyan">
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?w=120&q=80" alt="Unknown particles" loading="lazy">
+          </div>
           <div class="mission-content">
             <h3 class="mission-name">What is Dark Matter?</h3>
             <p class="mission-desc">
-              We know it exists from its gravitational effects, but we've never 
+              We know it exists from its gravitational effects, but we've never
               detected it directly. Particle accelerators search for candidates.
             </p>
           </div>
         </div>
-        
-        <div class="glass-card mission-card">
-          <div class="mission-icon">🔄</div>
+
+        <div class="glass-card mission-card glass-card--pink">
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=120&q=80" alt="Cosmic symmetry" loading="lazy">
+          </div>
           <div class="mission-content">
             <h3 class="mission-name">Why More Matter Than Antimatter?</h3>
             <p class="mission-desc">
-              The Big Bang should have created equal amounts of both, which would 
+              The Big Bang should have created equal amounts of both, which would
               have annihilated each other. Why does matter exist at all?
             </p>
           </div>
         </div>
-        
-        <div class="glass-card mission-card">
-          <div class="mission-icon">♾️</div>
+
+        <div class="glass-card mission-card glass-card--gold">
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1507400492013-162706c8c05e?w=120&q=80" alt="Ancient cosmos" loading="lazy">
+          </div>
           <div class="mission-content">
             <h3 class="mission-name">What Came Before the Big Bang?</h3>
             <p class="mission-desc">
-              Was there a "before"? Some theories suggest our universe emerged 
+              Was there a "before"? Some theories suggest our universe emerged
               from the collision of higher-dimensional membranes.
             </p>
           </div>
         </div>
-        
-        <div class="glass-card mission-card">
-          <div class="mission-icon">🌌</div>
+
+        <div class="glass-card mission-card glass-card--green">
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=120&q=80" alt="Earth in the cosmos" loading="lazy">
+          </div>
           <div class="mission-content">
             <h3 class="mission-name">Are We Alone?</h3>
             <p class="mission-desc">
-              With hundreds of billions of galaxies, each with hundreds of billions 
+              With hundreds of billions of galaxies, each with hundreds of billions
               of stars, are we the only intelligent life? The Fermi Paradox haunts us.
             </p>
           </div>
@@ -294,22 +318,20 @@
       </div>
     </div>
   </section>
-  
-  <!-- Quote -->
+
   <section class="section">
     <div class="container">
       <div class="reveal" style="text-align: center; max-width: 800px; margin: 0 auto;">
-        <div style="font-size: 4rem; margin-bottom: var(--space-sm); opacity: 0.3;">❝</div>
+        <div class="quote-mark">"</div>
         <blockquote class="text-serif" style="font-size: clamp(1.3rem, 3vw, 2rem); line-height: 1.5; color: var(--soft-white); margin-bottom: var(--space-md);">
-          The universe is not only queerer than we suppose, 
+          The universe is not only queerer than we suppose,
           but queerer than we can suppose.
         </blockquote>
-        <cite class="text-mono" style="font-size: 0.85rem; color: var(--dim-white); font-style: normal;">— J.B.S. Haldane</cite>
+        <cite class="text-mono" style="font-size: 0.82rem; color: var(--dim-white); font-style: normal;">&#8212; J.B.S. Haldane</cite>
       </div>
     </div>
   </section>
-  
-  <!-- Next Exhibition -->
+
   <section class="section">
     <div class="container">
       <div class="glass-card reveal" style="padding: var(--space-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
@@ -318,18 +340,17 @@
           <h3 class="text-display heading-sm">News & Discoveries</h3>
           <p class="text-body">The latest from the cosmic frontier.</p>
         </div>
-        <a href="./news.html" class="btn btn-primary">Continue Journey <span>→</span></a>
+        <a href="./news.html" class="btn btn-primary">Continue Journey <span>&#8594;</span></a>
       </div>
     </div>
   </section>
-  
-  <!-- Footer -->
+
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <div class="logo-icon" style="width: 24px; height: 24px; font-size: 0.7rem;">✧</div>
-          <span class="footer-text">The Cosmic Museum © 2024</span>
+          <div class="logo-icon" style="width: 24px; height: 24px;"></div>
+          <span class="footer-text">The Cosmic Museum</span>
         </div>
         <div class="footer-links">
           <a href="./index.html" class="footer-link">Home</a>
@@ -341,7 +362,7 @@
       </div>
     </div>
   </footer>
-  
+
   <script src="./js/starfield.js"></script>
   <script src="./js/main.js"></script>
 </body>

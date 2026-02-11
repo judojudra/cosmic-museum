@@ -6,11 +6,10 @@
   <meta name="description" content="Space Missions - Humanity's greatest expeditions into the cosmos.">
   <title>Space Missions | The Cosmic Museum</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌌</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='%2300d4ff' stroke-width='4'/><circle cx='50' cy='50' r='8' fill='%2300d4ff'/></svg>">
 </head>
 <body>
-  
-  <!-- Deep Space Background -->
+
   <div class="cosmos">
     <canvas id="starfield"></canvas>
     <div class="nebula-layer-1"></div>
@@ -18,12 +17,11 @@
     <div class="aurora"></div>
     <div class="particles"></div>
   </div>
-  
-  <!-- Navigation -->
+
   <div class="nav-container">
     <nav class="nav">
       <a href="./index.html" class="nav-logo">
-        <div class="logo-icon">✧</div>
+        <div class="logo-icon"></div>
         <span class="logo-text">Cosmic Museum</span>
       </a>
       <ul class="nav-links">
@@ -39,138 +37,151 @@
       </button>
     </nav>
   </div>
-  
-  <!-- Page Header -->
+
   <header class="page-header">
     <div class="page-header__label">Exhibition 03</div>
     <h1 class="page-header__title text-display">Space Missions</h1>
     <p class="page-header__desc">
-      From the first satellite to interstellar voyagers, explore humanity's 
+      From the first satellite to interstellar voyagers, explore humanity's
       greatest expeditions into the cosmos.
     </p>
   </header>
-  
-  <!-- Introduction -->
+
   <section class="section" style="padding-top: 0;">
     <div class="container">
       <div class="glass-card reveal" style="padding: var(--space-lg); max-width: 800px; margin: 0 auto; text-align: center;">
         <p class="text-lg" style="color: var(--soft-white); margin-bottom: var(--space-sm);">
-          Since Sputnik's beep first echoed from orbit in 1957, we've sent 
-          spacecraft to every planet in our solar system and beyond. Each mission 
+          Since Sputnik's beep first echoed from orbit in 1957, we've sent
+          spacecraft to every planet in our solar system and beyond. Each mission
           pushes the boundaries of what's possible.
         </p>
       </div>
     </div>
   </section>
-  
-  <!-- Iconic Missions -->
+
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label"><span></span>Legendary Expeditions</div>
+        <div class="section-label">Legendary Expeditions</div>
         <h2 class="text-display heading-md">Iconic <span class="text-gradient">Missions</span></h2>
       </div>
-      
+
       <div class="mission-grid stagger-children">
         <div class="glass-card mission-card glass-card--cyan">
-          <div class="mission-icon">🛰️</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=120&q=80" alt="Spacecraft in deep space" loading="lazy">
+          </div>
           <div class="mission-content">
-            <div class="mission-year">1977 – Present</div>
+            <div class="mission-year">1977 &#8211; Present</div>
             <h3 class="mission-name">Voyager 1 & 2</h3>
             <p class="mission-agency">NASA</p>
             <p class="mission-desc">
-              The farthest human-made objects from Earth. Voyager 1 is now in 
+              The farthest human-made objects from Earth. Voyager 1 is now in
               interstellar space, over 14 billion miles away, still sending data home.
             </p>
           </div>
         </div>
-        
+
         <div class="glass-card mission-card glass-card--pink">
-          <div class="mission-icon">🔭</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=120&q=80" alt="Deep space nebula" loading="lazy">
+          </div>
           <div class="mission-content">
-            <div class="mission-year">1990 – Present</div>
+            <div class="mission-year">1990 &#8211; Present</div>
             <h3 class="mission-name">Hubble Space Telescope</h3>
             <p class="mission-agency">NASA / ESA</p>
             <p class="mission-desc">
-              Has transformed our understanding of the universe, capturing 
+              Has transformed our understanding of the universe, capturing
               over 1.5 million observations and revolutionizing astronomy.
             </p>
           </div>
         </div>
-        
+
         <div class="glass-card mission-card glass-card--gold">
-          <div class="mission-icon">✨</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=120&q=80" alt="Stars in deep space" loading="lazy">
+          </div>
           <div class="mission-content">
-            <div class="mission-year">2021 – Present</div>
+            <div class="mission-year">2021 &#8211; Present</div>
             <h3 class="mission-name">James Webb Space Telescope</h3>
             <p class="mission-agency">NASA / ESA / CSA</p>
             <p class="mission-desc">
-              The most powerful telescope ever built. Peering deeper into 
+              The most powerful telescope ever built. Peering deeper into
               space and time than ever before, revealing the first galaxies.
             </p>
           </div>
         </div>
-        
+
         <div class="glass-card mission-card glass-card--green">
-          <div class="mission-icon">🚀</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=120&q=80" alt="Earth from orbit" loading="lazy">
+          </div>
           <div class="mission-content">
-            <div class="mission-year">1998 – Present</div>
+            <div class="mission-year">1998 &#8211; Present</div>
             <h3 class="mission-name">International Space Station</h3>
             <p class="mission-agency">NASA / Roscosmos / ESA / JAXA / CSA</p>
             <p class="mission-desc">
-              A continuously inhabited orbital laboratory, home to over 270 
+              A continuously inhabited orbital laboratory, home to over 270
               astronauts from 21 countries over 25 years.
             </p>
           </div>
         </div>
-        
+
         <div class="glass-card mission-card glass-card--cyan">
-          <div class="mission-icon">🪐</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=120&q=80" alt="Saturn-like planet" loading="lazy">
+          </div>
           <div class="mission-content">
-            <div class="mission-year">1997 – 2017</div>
+            <div class="mission-year">1997 &#8211; 2017</div>
             <h3 class="mission-name">Cassini-Huygens</h3>
             <p class="mission-agency">NASA / ESA / ASI</p>
             <p class="mission-desc">
-              Spent 13 years exploring Saturn and its moons, discovering 
+              Spent 13 years exploring Saturn and its moons, discovering
               oceans beneath Enceladus and lakes on Titan.
             </p>
           </div>
         </div>
-        
+
         <div class="glass-card mission-card glass-card--pink">
-          <div class="mission-icon">❤️</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1505506874110-6a7a69069a08?w=120&q=80" alt="Distant stars" loading="lazy">
+          </div>
           <div class="mission-content">
-            <div class="mission-year">2006 – Present</div>
+            <div class="mission-year">2006 &#8211; Present</div>
             <h3 class="mission-name">New Horizons</h3>
             <p class="mission-agency">NASA</p>
             <p class="mission-desc">
-              First spacecraft to visit Pluto, revealing a complex world 
+              First spacecraft to visit Pluto, revealing a complex world
               with mountains, glaciers, and a heart-shaped nitrogen ice plain.
             </p>
           </div>
         </div>
-        
+
         <div class="glass-card mission-card glass-card--green">
-          <div class="mission-icon">🔴</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?w=120&q=80" alt="Mars surface" loading="lazy">
+          </div>
           <div class="mission-content">
-            <div class="mission-year">2012 – Present</div>
+            <div class="mission-year">2012 &#8211; Present</div>
             <h3 class="mission-name">Curiosity Rover</h3>
             <p class="mission-agency">NASA</p>
             <p class="mission-desc">
-              A car-sized rover exploring Gale Crater on Mars, discovering 
+              A car-sized rover exploring Gale Crater on Mars, discovering
               evidence that Mars once had conditions suitable for life.
             </p>
           </div>
         </div>
-        
+
         <div class="glass-card mission-card glass-card--gold">
-          <div class="mission-icon">🚁</div>
+          <div class="mission-icon">
+            <img src="https://images.unsplash.com/photo-1457364559154-aa2644600ebb?w=120&q=80" alt="Rocket launch" loading="lazy">
+          </div>
           <div class="mission-content">
-            <div class="mission-year">2020 – Present</div>
+            <div class="mission-year">2020 &#8211; Present</div>
             <h3 class="mission-name">Perseverance & Ingenuity</h3>
             <p class="mission-agency">NASA</p>
             <p class="mission-desc">
-              Searching for ancient microbial life and collecting samples 
+              Searching for ancient microbial life and collecting samples
               for future return. Ingenuity achieved the first powered flight on another planet.
             </p>
           </div>
@@ -178,15 +189,14 @@
       </div>
     </div>
   </section>
-  
-  <!-- Mission Timeline -->
+
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label"><span></span>Milestones</div>
+        <div class="section-label">Milestones</div>
         <h2 class="text-display heading-md">Historic <span class="text-gradient">Firsts</span></h2>
       </div>
-      
+
       <div class="timeline reveal">
         <div class="timeline-item">
           <div class="timeline-year">1957</div>
@@ -195,7 +205,7 @@
             First artificial satellite. Its radio signals announced the dawn of the Space Age.
           </p>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-year">1961</div>
           <h3 class="timeline-title">Vostok 1</h3>
@@ -203,7 +213,7 @@
             Yuri Gagarin becomes the first human in space, orbiting Earth once in 108 minutes.
           </p>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-year">1969</div>
           <h3 class="timeline-title">Apollo 11</h3>
@@ -211,16 +221,16 @@
             Neil Armstrong and Buzz Aldrin become the first humans to walk on the Moon.
           </p>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-year">1971</div>
           <h3 class="timeline-title">Mars 3</h3>
           <p class="timeline-desc">
-            First soft landing on Mars. Though contact was lost after 20 seconds, 
+            First soft landing on Mars. Though contact was lost after 20 seconds,
             it proved landing was possible.
           </p>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-year">2012</div>
           <h3 class="timeline-title">Voyager 1 Leaves Solar System</h3>
@@ -228,49 +238,47 @@
             First human-made object to enter interstellar space, 35 years after launch.
           </p>
         </div>
-        
+
         <div class="timeline-item">
           <div class="timeline-year">2019</div>
           <h3 class="timeline-title">First Black Hole Image</h3>
           <p class="timeline-desc">
-            The Event Horizon Telescope captures the first direct image of a 
+            The Event Horizon Telescope captures the first direct image of a
             black hole in galaxy M87.
           </p>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- Active Missions -->
+
   <section class="section">
     <div class="container">
       <div class="section-header reveal">
-        <div class="section-label"><span></span>Right Now</div>
+        <div class="section-label">Right Now</div>
         <h2 class="text-display heading-md">Active <span class="text-gradient">Missions</span></h2>
       </div>
-      
+
       <div class="stats-grid stagger-children" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
         <div class="glass-card stat-card">
-          <div class="stat-value" style="font-size: 2.5rem;">🔴</div>
-          <div class="stat-label" style="color: var(--soft-white); font-size: 0.9rem; margin-top: var(--space-xs);">3 Rovers on Mars</div>
+          <div class="stat-value" style="font-size: 2.5rem; -webkit-text-fill-color: var(--aurora-cyan); background: none;">3</div>
+          <div class="stat-label" style="color: var(--soft-white); font-size: 0.82rem; margin-top: var(--space-xs);">Rovers on Mars</div>
         </div>
         <div class="glass-card stat-card">
-          <div class="stat-value" style="font-size: 2.5rem;">🛰️</div>
-          <div class="stat-label" style="color: var(--soft-white); font-size: 0.9rem; margin-top: var(--space-xs);">2 Voyagers in Interstellar Space</div>
+          <div class="stat-value" style="font-size: 2.5rem; -webkit-text-fill-color: var(--aurora-pink); background: none;">2</div>
+          <div class="stat-label" style="color: var(--soft-white); font-size: 0.82rem; margin-top: var(--space-xs);">Voyagers in Interstellar Space</div>
         </div>
         <div class="glass-card stat-card">
-          <div class="stat-value" style="font-size: 2.5rem;">🔭</div>
-          <div class="stat-label" style="color: var(--soft-white); font-size: 0.9rem; margin-top: var(--space-xs);">4 Space Telescopes</div>
+          <div class="stat-value" style="font-size: 2.5rem; -webkit-text-fill-color: var(--aurora-green); background: none;">4</div>
+          <div class="stat-label" style="color: var(--soft-white); font-size: 0.82rem; margin-top: var(--space-xs);">Space Telescopes</div>
         </div>
         <div class="glass-card stat-card">
-          <div class="stat-value" style="font-size: 2.5rem;">👨‍🚀</div>
-          <div class="stat-label" style="color: var(--soft-white); font-size: 0.9rem; margin-top: var(--space-xs);">Humans in Orbit</div>
+          <div class="stat-value" style="font-size: 2.5rem; -webkit-text-fill-color: var(--star-gold); background: none;">7</div>
+          <div class="stat-label" style="color: var(--soft-white); font-size: 0.82rem; margin-top: var(--space-xs);">Humans in Orbit</div>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- Next Exhibition -->
+
   <section class="section">
     <div class="container">
       <div class="glass-card reveal" style="padding: var(--space-lg); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-md);">
@@ -279,18 +287,17 @@
           <h3 class="text-display heading-sm">Deep Space & Cosmology</h3>
           <p class="text-body">The universe's grandest mysteries.</p>
         </div>
-        <a href="./deepspace.html" class="btn btn-primary">Continue Journey <span>→</span></a>
+        <a href="./deepspace.html" class="btn btn-primary">Continue Journey <span>&#8594;</span></a>
       </div>
     </div>
   </section>
-  
-  <!-- Footer -->
+
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
         <div class="footer-logo">
-          <div class="logo-icon" style="width: 24px; height: 24px; font-size: 0.7rem;">✧</div>
-          <span class="footer-text">The Cosmic Museum © 2024</span>
+          <div class="logo-icon" style="width: 24px; height: 24px;"></div>
+          <span class="footer-text">The Cosmic Museum</span>
         </div>
         <div class="footer-links">
           <a href="./index.html" class="footer-link">Home</a>
@@ -302,7 +309,7 @@
       </div>
     </div>
   </footer>
-  
+
   <script src="./js/starfield.js"></script>
   <script src="./js/main.js"></script>
 </body>
